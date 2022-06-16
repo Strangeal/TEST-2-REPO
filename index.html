@@ -46,7 +46,38 @@
       <form class="form-group">
         <label for="age">Age (Optional)</label><br>
         <input class="form-control" id="age" type="number"  name="age" placeholder="Age" required>
-      </form>   
+      </form>
+      <form class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select class="form-control" id="dropdown" type="number"  name="role" placeholder="Select current role" required>
+       <option disabled selected value>Select current role</option>
+       <option value="students">Student</option>
+       <option value="fullTime">Full time job</option>
+       <option value="learner">Full time learner</option>
+       <option value="preferNot">Prefer not to say</option>
+       <option value="other">Other</option>
+
+       <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+          <input name="radio" value="definitely" class="input-radio" type ="radio" checked>
+          Definitely
+        </label>
+        <label>
+          <input name="maybe" value="maybe" class="input-radio" type ="radio" checked>
+          Maybe
+        </label>
+        <label>
+          <input name="not_sure" value="not_sure" class="input-radio" type ="radio" checked>
+          Not sure
+        </label>
+       </div>
+
+        </select>
+
+      </form> 
+      
+      
     </div>
   
     <script  src="js/index.js"></script>
