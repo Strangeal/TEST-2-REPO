@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+<body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -21,7 +26,29 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World,we are software developers!</h1>
+
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <div>
+      <form id="survey-form form-group">
+        <label for="name">Name</label><br>
+        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name" required>
+      </form>
+
+      <form class="form-group">
+        <label for="email">Email</label><br>
+        <input class="form-control" id="email" type="text"  name="email" placeholder="Enter your email" required>
+      </form>
+      
+      <form class="form-group">
+        <label for="age">Age (Optional)</label><br>
+        <input class="form-control" id="age" type="number"  name="age" placeholder="Age" required>
+      </form>   
+    </div>
+  
     <script  src="js/index.js"></script>
   </body>
 </html>
